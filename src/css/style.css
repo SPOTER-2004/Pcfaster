@@ -1,0 +1,82 @@
+*{
+  box-sizing: border-box;
+}
+
+.slider {
+  position: relative;
+}
+
+.slides img {
+  display: none;
+}
+
+.displaySlide {
+  display: block !important;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ============================================================ */
+
+[data-tab-content] {
+  display: none !important;
+}
+
+.active[data-tab-content] {
+  display: block !important;
+}
+
+/* ============================================================== */
+
+.slider {
+  position: relative;
+}
+
+.slides img {
+  display: none; /* یا تنظیم به دلخواه */
+}
+
+.displaySlide {
+  display: block !important;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.zoom-image {
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 300px; /* تنظیم اندازه دلخواه */
+  height: 300px; /* تنظیم اندازه دلخواه */
+  background-repeat: no-repeat !important;
+  background-size: 300%;
+  border: 1px solid #ccc;
+  z-index: 10;
+  background: white;
+  overflow: hidden;
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .zoom-image {
+    display: none !important;
+  }
+}

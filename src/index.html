@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pcfaster</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./output.css" />
+  <script src="./js/script.js" defer></script>
+
+
+</head>
+
+<body class=" bg-body font-body">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md  py-3 px-5">
+    <nav class="container mx-auto flex justify-between items-center">
+      <div class="profile box-border w-16 md:w-20">
+        <img src="images/Logo/Logo-main.png" class="w-3/5" alt="" />
+      </div>
+
+      <div class="search-box w-6/12 hidden md:inline-block">
+        <input type="search"
+          class="bg-gray-100 p-4 w-full rounded-2xl text-xs outline-none hover:shadow-md hover:transition ease-in-out delay-60 focus:-translate-y-0.5 "
+          placeholder="دنبال چه چیزی هستید؟">
+      </div>
+      <div class="icons-box flex">
+        <div class="bg-blue-100 rounded-full w-8 text-center ">
+          <box-icon name='cart' color='#4c5e60' class="w-4 mt-1 cursor-pointer"></box-icon>
+        </div>
+        <div class="bg-blue-100 rounded-full w-8 text-center  mr-2">
+          <box-icon name='user' color='#4c5e60' class="w-4 mt-1 cursor-pointer"></box-icon>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- Main -->
+  <main class=" mt-8 px-3 shadow-sm sm:container sm:mx-auto">
+
+    <!-- Graphic-preview -->
+    <section class="main mt-7 ">
+      <div class="bg-white flex gap-x-2 sm:gap-x-8 rounded-md shadow-md p-5">
+        <div class="text-gray-500 text-xs">صفحه اصلی ></div>
+        <div class="text-gray-500 text-xs">کارت گرافیک ></div>
+        <div class="text-btn text-xs">RTX 4070 Ti SUPER 16GB</div>
+      </div>
+
+      <!-- Graphic-content -->
+      <div class="content grid lg:grid-cols-2 mt-10 shadow-xl border rounded-md px-6 py-8 my-6">
+        <div class="graphic-img slider flex justify-center  lg:justify-center md:px-20">
+          <div class="slides">
+            <img src="images/graphic-imge/graphic-card.png" class="first-image" alt="Image 1" />
+            <img src="images/graphic-imge/graphic-back.png" class="first-image" alt="Image 2" />
+            <img src="images/graphic-imge/graphic-fans.png" class="first-image" alt="Image 3" />
+            <img src="images/graphic-imge/graphic-port.png" class="first-image" alt="Image 3" />
+            <img src="images/graphic-imge/graphic-view.png" class="first-image" alt="Image 3" />
+            <!-- سایر تصاویر -->
+          </div>
+          <div class="zoom-image"></div>
+
+
+          <button
+            class="next text-gray-600 text-2xl absolute top-1/4 -translate-y-1/4 right-0 sm:right-12 lg:right-10 p-5 rounded-xl hover:bg-slate-100 transition-all"
+            onclick="next()">&#10094</button>
+          <button
+            class="prev text-gray-600 text-2xl absolute top-1/4 -translate-y-1/4 left-0 sm:left-12 lg:left-10 p-5 rounded-xl hover:bg-slate-100 transition-all"
+            onclick="prev()">&#10095</button>
+
+        </div>
+
+        <!-- Graphic-name-->
+        <div class="description py-10 grid gap-10 text-sm lg:text-lg">
+          <h3 class="text-green-900">
+            کارت گرافیک ایسوس TUF Gaming GeForce RTX 4070 Ti SUPER 16GB GDDR6X
+          </h3>
+          <!-- Graphic-title -->
+          <div class="contentext-right">
+            <h5 class="opacity-50">مدل پردازنده: RTX 4070 Ti</h5>
+            <h5 class="opacity-50 mt-3">فرکانس افزایشی: 2640 مگاهرتز</h5>
+            <h5 class="opacity-50 mt-3">حجم حافظه: 16 گیگابایت</h5>
+            <h5 class="opacity-50 mt-3">نوع حافظه: GDDR6X</h5>
+            <h5 class="opacity-50 mt-3">اسلات توسعه: 3.25 عدد</h5>
+            <h5 class="opacity-50 mt-3">پاور پیشنهادی: 750 وات</h5>
+          </div>
+
+          <div class="Graphic-price" dir="ltr">
+            <h1 class="text-btn text-xl lg:text-2xl">72/000/000</h1>
+          </div>
+
+          <div class="text-left">
+            <button class="bg-btn text-white w-full rounded-xl  py-4 sm:py-5 lg:py-5 lg:w-8/12">
+              افزودن به سبد خرید
+            </button>
+          </div>
+
+          <!-- Company-Services -->
+          <div class="flex justify-between mt-10">
+            <div>
+              <img src="images/warranty.svg" width="90" height="90" alt="Warranty" />
+            </div>
+
+            <div>
+              <img src="images/Counseling.svg" width="90" height="90" alt="Warranty" />
+            </div>
+
+            <div>
+              <img src="images/packing.svg" width="90" height="90" alt="Warranty" />
+            </div>
+
+            <div>
+              <img src="images/support.svg" width="90" height="90" alt="Warranty" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Graphic-title -->
+    <section class="bg-white p-10 shadow-md rounded-md mt-14">
+      <ul class="flex text-sm">
+        <li class="ml-10 cursor-pointer" data-tab-target="#info">مشخصات فنی</li>
+        <li class="text-gray-500 cursor-pointer" data-tab-target="#comments">نظرات کاربران</li>
+        <li class="mr-10 text-gray-500 cursor-pointer" data-tab-target="#question">پرسش و پاسخ</li>
+      </ul>
+    </section>
+
+    <!-- Graphic-description -->
+    <section id="info" data-tab-content class="mt-20 p-10 grid gap-14 rounded-xl shadow-md border-t-2 active ">
+      <div>
+        <h3 class="text-md text-btn">کارت گرافیک</h3>
+      </div>
+
+      <div class=" py-4 text-xs lg:text-sm ">
+        <div class="sm:flex">
+          <div class="bg-gray-100 sm:w-1/3 p-4">سازنده</div>
+          <div class="border border-b-2 sm:w-2/3 p-4">Asus</div>
+        </div>
+
+        <div class="sm:flex">
+          <div class="bg-gray-100 sm:w-1/3 p-4">ابعاد</div>
+          <div class="border border-b-2 sm:w-2/3 p-4">
+            65×138×305 میلی‌متر
+          </div>
+        </div>
+
+        <div class="sm:flex">
+          <div class="bg-gray-100 sm:w-1/3 p-4">تعداد فن</div>
+          <div class="border border-b-2 sm:w-2/3 p-4">3 عدد</div>
+        </div>
+
+        <div class="sm:flex">
+          <div class="bg-gray-100 sm:w-1/3 p-4">نورپردازی</div>
+          <div class="border border-b-2 sm:w-2/3 p-4">ARGB</div>
+        </div>
+
+        <div class="sm:flex">
+          <div class="bg-gray-100 sm:w-1/3 p-4">مدل پردازنده</div>
+          <div class="border border-b-2 sm:w-2/3 p-4">RTX 4070 Ti</div>
+        </div>
+
+        <div class="sm:flex">
+          <div class="bg-gray-100 sm:w-1/3 p-4">سازنده پردازنده گرافیکی</div>
+          <div class="border border-b-2 sm:w-2/3 p-4">nVIDIA</div>
+        </div>
+
+        <div class="sm:flex">
+          <div class="bg-gray-100 sm:w-1/3 p-4">نسل پردازنده</div>
+          <div class="border border-b-2 sm:w-2/3 p-4">Ada Lovelace</div>
+        </div>
+
+        <div class="sm:flex">
+          <div class="bg-gray-100 sm:w-1/3 p-4">حجم حافظه</div>
+          <div class="border border-b-2 sm:w-2/3 p-4">16 گیگابایت</div>
+        </div>
+
+        <div class="sm:flex">
+          <div class="bg-gray-100 sm:w-1/3 p-4">فرکانس پایه</div>
+          <div class="border border-b-2 sm:w-2/3 p-4">2610 مگاهرتز</div>
+        </div>
+
+        <div class="sm:flex">
+          <div class="bg-gray-100 sm:w-1/3 p-4">فرکانس افزایشی</div>
+          <div class="border border-b-2 sm:w-2/3 p-4">2640 مگاهرتز</div>
+        </div>
+
+        <div class="sm:flex">
+          <div class="bg-gray-100 sm:w-1/3 p-4">نوع حافظه</div>
+          <div class="border border-b-2 sm:w-2/3 p-4">GDDR6X</div>
+        </div>
+
+        <div class="sm:flex">
+          <div class="bg-gray-100 sm:w-1/3 p-4">سرعت حافظه</div>
+          <div class="border border-b-2 sm:w-2/3 p-4">
+            16 گیگابیت بر ثانیه
+          </div>
+        </div>
+
+        <div class="sm:flex">
+          <div class="bg-gray-100 sm:w-1/3 p-4">پهنای باند رابط</div>
+          <div class="border border-b-2 sm:w-2/3 p-4">256 بیت</div>
+        </div>
+
+        <div class="sm:flex">
+          <div class="bg-gray-100 sm:w-1/3 p-4">پشتیبانی از Full HD</div>
+          <div class="border border-b-2 sm:w-2/3 p-4">دارد</div>
+        </div>
+
+        <div class="sm:flex">
+          <div class="bg-gray-100 sm:w-1/3 p-4">پشتیبانی از 4K</div>
+          <div class="border border-b-2 sm:w-2/3 p-4">دارد</div>
+        </div>
+
+        <div class="sm:flex">
+          <div class="bg-gray-100 sm:w-1/3 p-4">پشتیبانی از 8K</div>
+          <div class="sm:w-2/3 p-4">دارد</div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Graphic-question -->
+    <section id="question" class="p-10 text-sm" data-tab-content>
+      <div class="w-full lg:flex lg:flex-row lg:gap-x-8 flex flex-col gap-y-10 ">
+        <div class="w-full flex flex-col bg-white p-5 shadow-md rounded-md">
+          <div class="border border-gray-300 py-5 rounded-lg">
+            <div class="px-5">
+              <p>علی صابری :</p>
+            </div>
+            <div class="px-5">
+              <p>کارت گرافیک 4070 برای بازی‌های جدید خوبه؟</p>
+            </div>
+          </div>
+          <div class="bg-green-100 w-11/12 self-end rounded-md p-5 mt-5">
+            <p>مدیر سایت:</p>
+            <p>بله، بازی‌های جدید رو با تنظیمات بالا بدون مشکل اجرا می‌کنه.</p>
+          </div>
+        </div>
+
+        <div class="w-full flex flex-col bg-white p-5 shadow-md rounded-md">
+          <div class="border border-gray-300 py-5 rounded-lg">
+            <div class="px-5">
+              <p>حسین رستمی :</p>
+            </div>
+            <div class="px-5">
+              <p>کارت 4070 با مادربوردهای قدیمی سازگاره؟</p>
+            </div>
+          </div>
+          <div class="bg-green-100 w-11/12 self-end rounded-md p-5 mt-5">
+            <p>مدیر سایت:</p>
+            <p>با مادربوردهای PCIe 3.0 هم کار می‌کنه، ولی با PCIe 4.0 بهتر عمل می‌کنه.</p>
+          </div>
+        </div>
+        <div class="w-full flex flex-col bg-white p-5 shadow-md rounded-md">
+          <div class="border border-gray-300 py-5 rounded-lg">
+            <div class="px-5">
+              <p>لیلا حاتمی :</p>
+            </div>
+            <div class="px-5">
+              <p>مصرف انرژی کارت گرافیک 4070 چطوره؟</p>
+            </div>
+          </div>
+          <div class="bg-green-100 w-11/12 self-end rounded-md p-5 mt-5">
+            <p>مدیر سایت:</p>
+            <p>نسبتاً بالاست، باید منبع تغذیه قوی و خنک‌کننده مناسب داشته باشید.</p>
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </section>
+
+    <!-- Graphic-overview -->
+    <section id="comments" class="p-10" data-tab-content>
+      <div class="lg:flex grid gap-x-10 justify-between gap-5">
+        <div class="w-full bg-white p-5 shadow-md rounded-md">
+          <div class="flex justify-between items-center">
+            <img src="images/profile-5.jpg" class="h-14 w-14 rounded-full object-cover object-center" alt="">
+            <div class="flex">
+              <box-icon name='star' type='solid' color='#f9a114'></box-icon>
+              <box-icon name='star' type='solid' color='#f9a114'></box-icon>
+              <box-icon name='star' type='solid' color='#f9a114'></box-icon>
+              <box-icon name='star' type='solid' color='#f9a114'></box-icon>
+              <box-icon name='star' type='solid' color='#f9a114'></box-icon>
+            </div>
+          </div>
+          <div class="mt-5">
+            <p class="text-xs ">کارت گرافیک 4070 واقعاً عملکرد بی‌نظیری دارد. تمام بازی‌های جدید را با بالاترین تنظیمات
+              گرافیکی بدون هیچ مشکلی اجرا می‌کند</p>
+          </div>
+
+        </div>
+        <div class="w-full bg-white p-5 shadow-md rounded-md">
+          <div class="flex justify-between items-center">
+            <img src="images/profile-4.jpg" class="h-14 w-14 rounded-full object-cover object-center" alt="">
+            <div class="flex">
+              <box-icon name='star' type='solid' color='#f9a114'></box-icon>
+              <box-icon name='star' type='solid' color='#f9a114'></box-icon>
+              <box-icon name='star' type='solid' color='#f9a114'></box-icon>
+              <box-icon name='star' type='solid' color='#f9a114'></box-icon>
+            </div>
+          </div>
+          <div class="mt-5">
+            <p class="text-xs">کارت گرافیک 4070 در کل خوب است، اما صدای فن‌ها در زمان بازی‌های سنگین کمی آزاردهنده است.
+              فکر می‌کردم خنک‌کننده بهتری داشته باشد</p>
+          </div>
+
+        </div>
+
+        <div class="w-full bg-white p-5 shadow-md rounded-md">
+          <div class="flex justify-between items-center">
+            <img src="images/Profile.jpg" class="h-14 w-14 rounded-full object-cover object-center" alt="">
+            <div class="flex">
+              <box-icon name='star' type='solid' color='#f9a114'></box-icon>
+              <box-icon name='star' type='solid' color='#f9a114'></box-icon>
+              <box-icon name='star' type='solid' color='#f9a114'></box-icon>
+              <box-icon name='star' type='solid' color='#f9a114'></box-icon>
+              <box-icon name='star' type='solid' color='#f9a114'></box-icon>
+            </div>
+          </div>
+          <div class="mt-5">
+            <p class="text-xs">کارت 4070 برای کارهای گرافیکی سنگین و رندرینگ عالی است. زمان رندر پروژه‌هایم به طور قابل
+              توجهی کاهش پیدا کرده.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  
+  <!-- footer -->
+  <footer class="grid gap-16 mt-20">
+    <section>
+
+      <div>
+        <div class="sign-up md:text-xl text-center mb-5 hover:scale-110 transition ease-in-out delay-30">
+          <strong>عضویت در خبرنامه</strong>
+        </div>
+
+        <!-- footer-sign-up -->
+        <section class="sign-up lg:px-20">
+          <div class="lg:flex">
+            <div class="w-10/12 mx-auto lg:w-3/5">
+              <input type="text" class="w-full rounded-2xl p-5 bg-gray-100 my-5 outline-none"
+                placeholder="آدرس ایمیل خود را وارد کنید" />
+            </div>
+
+            <div class="w-10/12 mx-auto lg:w-2/5 flex items-center">
+              <button
+                class="w-full lg:rounded-md bg-transparent hover:bg-btn hover:text-white rounded-full border-2 border-btn p-3 text-green-900 transition-all ">
+                عضویت
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- footer-social-links -->
+        <section class="social-links flex justify-center py-3 gap-20 my-5">
+          <div
+            class="hover:bg-sky-100 hover:border hover:border-sky-800 hover:scale-110 transition ease-in-out delay-30  icon-bg bg-sky-200 p-2 md:p-6 rounded-md flex justify-center items-center">
+            <box-icon name="telegram" type="logo" color="#5292c7"></box-icon>
+          </div>
+
+          <div
+            class="hover:bg-sky-100 hover:border hover:border-sky-800 hover:scale-110 transition ease-in-out delay-30  icon-bg bg-sky-200 p-2 md:p-6 rounded-md flex justify-center items-center">
+            <box-icon type="logo" name="twitter" color="#5292c7"></box-icon>
+          </div>
+
+          <div
+            class="hover:bg-sky-100 hover:border hover:border-sky-800 hover:scale-110 transition ease-in-out delay-30  icon-bg bg-sky-200 p-2 md:p-6 rounded-md flex justify-center items-center">
+            <box-icon name="youtube" type="logo" color="#5292c7"></box-icon>
+          </div>
+        </section>
+      </div>
+    </section>
+
+
+    <!-- footer-links -->
+    <section class="pb-32 lg:pb-10 ">
+      <div class="grid gap-6 xl:flex md:justify-around">
+        <div class="text-center">
+          <a href="#" class="text-xs xl:text-base">پی سی فستر</a>
+        </div>
+        <div class="text-center">
+          <a href="#" class="text-xs xl:text-base">تالار گفتمان</a>
+        </div>
+        <div class="text-center">
+          <a href="#" class="text-xs xl:text-base">راهنمای خرید و مقررات</a>
+        </div>
+        <div class="text-center">
+          <a href="#" class="text-xs xl:text-base">شرایط گارانتی</a>
+        </div>
+        <div class="text-center">
+          <a href="#" class="text-xs xl:text-base">تماس با</a>
+        </div>
+        <div class="text-center">
+          <a href="#" class="text-xs xl:text-base">درباره ما</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- footer-mobile-menu -->
+    <section class="flex justify-between shadow-2xl bg-white w-full px-10 py-4 bottom-0 fixed lg:hidden">
+      <div class="text-center cursor-pointer">
+        <a href="#"><box-icon name='home-smile' color='#4c5e60'></box-icon></a>
+        <p class="text-xs ">خانه</p>
+      </div>
+
+      <div class="text-center cursor-pointer">
+        <a href=""><box-icon name='menu' color='#4c5e60'></box-icon></a>
+        <p class="text-xs ">دسته بندی</p>
+      </div>
+
+      <div class="text-center cursor-pointer">
+        <a href=""><box-icon name='cart-alt' color='#4c5e60'></box-icon></a>
+        <p class="text-xs ">سبد خرید</p>
+      </div>
+
+      <div class="text-center cursor-pointer">
+        <a href=""><box-icon name='search' color='#4c5e60'></box-icon></a>
+        <div class="text-xs ">جستجو</div>
+      </div>
+
+      <div class="text-center cursor-pointer">
+        <a href=""><box-icon name='user' color='#4c5e60'></box-icon></a>
+        <p class="text-xs ">ورود</p>
+      </div>
+
+    </section>
+  </footer>
+
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+</body>
+
+</html>
