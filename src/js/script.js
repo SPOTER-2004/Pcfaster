@@ -70,3 +70,42 @@ tabs.forEach((tab) => {
     target.classList.add("active");
   });
 });
+
+
+
+// .............................................
+
+
+// script.js
+function showTab(tabId) {
+  // مخفی کردن تمامی تب‌ها
+  const contents = document.querySelectorAll('.tab-content');
+  contents.forEach(content => {
+      content.classList.remove('active');
+      // استفاده از setTimeout برای تأخیر در حذف display
+      setTimeout(() => {
+          content.style.display = 'none';
+      }, 500); // مدت زمان transition برای شفافیت
+  });
+
+  // برداشتن کلاس active از تمامی تب‌ها
+  const tabs = document.querySelectorAll('.tab');
+  tabs.forEach(tab => {
+      tab.classList.remove('active');
+  });
+
+  // نمایش تب انتخاب شده
+  const activeContent = document.getElementById(tabId);
+  activeContent.style.display = 'block'; // نمایش تب فعال
+  activeContent.classList.add('active');
+  
+  // اضافه کردن کلاس active به تب انتخاب شده
+  event.target.classList.add('active');
+}
+
+// نمایش اولین تب به صورت پیش فرض
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelector('.tab').click();
+});
+
+

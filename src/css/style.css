@@ -80,3 +80,30 @@
     display: none !important;
   }
 }
+
+
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: color 0.3s ease, font-weight 0.3s ease;
+  font-weight: normal;
+  color: #666; /* رنگ پیش‌فرض برای تب‌ها */
+}
+
+.tab.active {
+  font-weight: bold;
+  color: #000; /* رنگ فعال برای تب‌ها */
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+  opacity: 0; /* شروع با حالت نامرئی */
+  transition: opacity 0.5s ease;
+}
+
+.tab-content.active {
+  display: block;
+  opacity: 1; /* تغییر به حالت قابل مشاهده */
+}

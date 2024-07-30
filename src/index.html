@@ -120,16 +120,16 @@
     </section>
 
     <!-- Graphic-title -->
-    <section class="bg-white p-10 shadow-md rounded-md mt-14">
+    <section class=" bg-white p-10 shadow-md rounded-md mt-14">
       <ul class="flex text-sm">
-        <li class="ml-10 cursor-pointer" data-tab-target="#info">مشخصات فنی</li>
-        <li class="text-gray-500 cursor-pointer" data-tab-target="#comments">نظرات کاربران</li>
-        <li class="mr-10 text-gray-500 cursor-pointer" data-tab-target="#question">پرسش و پاسخ</li>
+        <li class="tab ml-10 cursor-pointer" data-tab-target="#info" onclick="showTab('info')">مشخصات فنی</li>
+        <li class="tab cursor-pointer" data-tab-target="#comments" onclick="showTab('question')" >نظرات کاربران</li>
+        <li class="tab mr-10 cursor-pointer" data-tab-target="#question" onclick="showTab('comments')" >پرسش و پاسخ</li>
       </ul>
     </section>
 
     <!-- Graphic-description -->
-    <section id="info" data-tab-content class="mt-20 p-10 grid gap-14 rounded-xl shadow-md border-t-2 active ">
+    <section id="info" data-tab-content class="tab-content mt-20 p-10 grid gap-14 rounded-xl shadow-md border-t-2 active">
       <div class="my-5">
         <h3 class="text-md text-btn">کارت گرافیک</h3>
       </div>
@@ -223,7 +223,7 @@
 
 
     <!-- Graphic-question -->
-    <section id="question" class="p-10 text-sm" data-tab-content>
+    <section id="question" class="tab-content p-10 text-sm" data-tab-content >
       <div class="w-full lg:flex lg:flex-row lg:gap-x-8 flex flex-col gap-y-10 ">
         <div class="w-full flex flex-col bg-white p-5 shadow-md rounded-md">
           <div class="border border-gray-300 py-5 rounded-lg">
@@ -276,7 +276,7 @@
     </section>
 
     <!-- Graphic-overview -->
-    <section id="comments" class="p-10" data-tab-content>
+    <section id="comments" class="tab-content p-10" data-tab-content >
       <div class="lg:flex grid gap-x-10 justify-between gap-5">
         <div class="w-full bg-white p-5 shadow-md rounded-md">
           <div class="flex justify-between items-center">
