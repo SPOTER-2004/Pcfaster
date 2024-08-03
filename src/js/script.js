@@ -78,34 +78,87 @@ tabs.forEach((tab) => {
 
 // script.js
 function showTab(tabId) {
-  // مخفی کردن تمامی تب‌ها
   const contents = document.querySelectorAll('.tab-content');
   contents.forEach(content => {
       content.classList.remove('active');
-      // استفاده از setTimeout برای تأخیر در حذف display
       setTimeout(() => {
           content.style.display = 'none';
-      }, 500); // مدت زمان transition برای شفافیت
+      }, 500); 
   });
 
-  // برداشتن کلاس active از تمامی تب‌ها
   const tabs = document.querySelectorAll('.tab');
   tabs.forEach(tab => {
       tab.classList.remove('active');
   });
 
-  // نمایش تب انتخاب شده
   const activeContent = document.getElementById(tabId);
-  activeContent.style.display = 'block'; // نمایش تب فعال
+  activeContent.style.display = 'block'; 
   activeContent.classList.add('active');
   
-  // اضافه کردن کلاس active به تب انتخاب شده
   event.target.classList.add('active');
 }
 
-// نمایش اولین تب به صورت پیش فرض
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('.tab').click();
 });
 
 
+
+
+// For user Bencmark
+var ctx = document.getElementById("mychart").getContext("2d");
+      var myChart = new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: ["Red Dead2", "PUBG", "Gta V", "WarZone", "Fortnite", "Apex Legend", "CypberPunk 2077", "Rainbox Six"],
+          datasets: [
+            {
+              label: "# of Votes",
+              data: [ 0, 100, 200, 300, 400, 500, 600, 700],
+              backgroundColor: [
+                "#198754",
+                "#198754",
+                "#198754",
+                "#198754",
+                "#198754",
+                "#198754",
+                "#198754",
+                "#198754",
+              ],
+            },
+          ],
+        },
+        options: {
+          indexAxis: "y", 
+          scales: {
+            x: {
+              beginAtZero: true,
+              max: 700,
+            },
+          },
+        },
+      });
+
+      function updateChart(level) {
+        var data;
+        if (level === "low") {
+          data = [193, 260, 235, 200, 439, 300, 110, 666];
+        } else if (level === "medium") {
+          data = [170, 250, 200, 183, 287, 290, 106, 607];
+        } else if (level === "high") {
+          data = [158, 235, 175, 178, 240, 270, 85, 539];
+        }
+        myChart.data.datasets[0].data = data;
+        myChart.update();
+        document.getElementById('low').classList.remove('active-tab');
+        document.getElementById('medium').classList.remove('active-tab');
+        document.getElementById('high').classList.remove('active-tab');
+        
+        document.getElementById(level).classList.add('active-tab');
+      }
+      
+
+
+      updateChart('low');
+
+  

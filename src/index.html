@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./output.css" />
   <script src="./js/script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 
 </head>
@@ -51,29 +52,29 @@
 
       <!-- Graphic-content -->
       <div class="content grid lg:grid-cols-2 mt-10 shadow-xl border rounded-md px-6 py-8 my-6">
-        <div class="graphic-img slider flex justify-center  lg:justify-center md:px-20">
-          <div class="slides">
-            <img src="images/graphic-imge/graphic-card.png" class="first-image" alt="Image 1" />
-            <img src="images/graphic-imge/graphic-back.png" class="first-image" alt="Image 2" />
-            <img src="images/graphic-imge/graphic-fans.png" class="first-image" alt="Image 3" />
-            <img src="images/graphic-imge/graphic-port.png" class="first-image" alt="Image 3" />
-            <img src="images/graphic-imge/graphic-view.png" class="first-image" alt="Image 3" />
+        <div class="w-full lg:w-9/12 graphic-img slider flex justify-center lg:justify-center">
+          <div class="slides lg:mt-16">
+            <img src="images/graphic-imge/graphic-card.png" class="first-image w-40 sm:w-52 sm:h-52 md:h-64 md:w-64 lg:h-72 lg:w-72 xl:w-96 xl:h-96 " alt="Image 1" />
+            <img src="images/graphic-imge/graphic-back.png" class="first-image w-40 sm:w-52 sm:h-52 md:h-64 md:w-64 lg:h-72 lg:w-72 xl:w-96 xl:h-96 " alt="Image 2" />
+            <img src="images/graphic-imge/graphic-fans.png" class="first-image w-40 sm:w-52 sm:h-52 md:h-64 md:w-64 lg:h-72 lg:w-72 xl:w-96 xl:h-96 " alt="Image 3" />
+            <img src="images/graphic-imge/graphic-port.png" class="first-image w-40 sm:w-52 sm:h-52 md:h-64 md:w-64 lg:h-72 lg:w-72 xl:w-96 xl:h-96 " alt="Image 3" />
+            <img src="images/graphic-imge/graphic-view.png" class="first-image w-40 sm:w-52 sm:h-52 md:h-64 md:w-64 lg:h-72 lg:w-72 xl:w-96 xl:h-96 " alt="Image 3" />
             <!-- سایر تصاویر -->
           </div>
           <div class="zoom-image"></div>
 
 
           <button
-            class="next text-gray-600 text-2xl absolute top-1/4 -translate-y-1/4 right-0 sm:right-12 lg:right-10 p-5 rounded-xl hover:bg-slate-100 transition-all"
+            class="next text-gray-600 text-2xl absolute  mt-12 md:mt-20 lg:mt-44 xl:mt-52  right-0   p-5 rounded-xl hover:bg-slate-100 transition-all"
             onclick="next()">&#10094</button>
           <button
-            class="prev text-gray-600 text-2xl absolute top-1/4 -translate-y-1/4 left-0 sm:left-12 lg:left-10 p-5 rounded-xl hover:bg-slate-100 transition-all"
+            class="prev text-gray-600 text-2xl absolute  mt-12 md:mt-20 lg:mt-44 xl:mt-52  left-0 p-5 rounded-xl hover:bg-slate-100 transition-all"
             onclick="prev()">&#10095</button>
 
         </div>
 
         <!-- Graphic-name-->
-        <div class="description py-10 grid gap-10">
+        <div class=" description py-10 grid gap-10">
           <h3 class="text-green-900 text-base xl:text-2xl">
             کارت گرافیک ایسوس TUF Gaming GeForce RTX 4070 Ti SUPER 16GB GDDR6X
           </h3>
@@ -88,7 +89,7 @@
           </div>
 
           <div class="Graphic-price" dir="ltr">
-            <p class="text-btn text-xl lg:text-2xl">72/000/000</p>
+            <p class="text-btn text-2xl font-bold lg:text-2xl">72/000/000</p>
           </div>
 
           <div class="text-left">
@@ -119,22 +120,25 @@
       </div>
     </section>
 
+   
     <!-- Graphic-title -->
-    <section class=" bg-white p-10 shadow-md rounded-md mt-14">
-      <ul class="flex text-sm">
-        <li class="tab ml-10 cursor-pointer" data-tab-target="#info" onclick="showTab('info')">مشخصات فنی</li>
-        <li class="tab cursor-pointer" data-tab-target="#comments" onclick="showTab('question')" >نظرات کاربران</li>
-        <li class="tab mr-10 cursor-pointer" data-tab-target="#question" onclick="showTab('comments')" >پرسش و پاسخ</li>
+    <section class=" bg-white py-10 px-2 shadow-md rounded-md mt-14 ">
+      <ul class="flex text-sm sm:gap-x-16 ">
+        <li class="tab cursor-pointer sm:text-base " data-tab-target="#info" onclick="showTab('info')">مشخصات فنی</li>
+        <li class="tab cursor-pointer sm:text-base " data-tab-target="#comments" onclick="showTab('question')" >نظرات کاربران</li>
+        <li class="tab cursor-pointer sm:text-base " data-tab-target="#question" onclick="showTab('comments')" >پرسش و پاسخ</li>
       </ul>
     </section>
 
+    
+
     <!-- Graphic-description -->
-    <section id="info" data-tab-content class="tab-content mt-20 p-10 grid gap-14 rounded-xl shadow-md border-t-2 active">
+    <section id="info" data-tab-content class="tab-content mt-20 grid gap-14 rounded-xl shadow-md border-t-2 active">
       <div class="my-5">
-        <h3 class="text-md text-btn">کارت گرافیک</h3>
+        <h3 class="text-lg font-bold text-btn">کارت گرافیک</h3>
       </div>
 
-      <div class=" py-4 text-xs xl:text-base">
+      <div class="full-description text-color py-4 text-xs xl:text-base">
         <div class="sm:flex">
           <div class="bg-gray-100 sm:w-1/3 p-4">سازنده</div>
           <div class="border border-b-2 sm:w-2/3 p-4">Asus</div>
@@ -275,8 +279,9 @@
       </div>
     </section>
 
+
     <!-- Graphic-overview -->
-    <section id="comments" class="tab-content p-10" data-tab-content >
+    <section id="comments" class="tab-content p-10 " data-tab-content >
       <div class="lg:flex grid gap-x-10 justify-between gap-5">
         <div class="w-full bg-white p-5 shadow-md rounded-md">
           <div class="flex justify-between items-center">
@@ -332,15 +337,29 @@
       </div>
     </section>
 
+    <hr class="mt-36">
+
+    <!-- Graphic-benchmark -->
+    <section class="w-10/12 mx-auto my-32 ">
+      
+      <h1 class="text-3xl my-20 text-center">نمودار کارت گرافیک RTX 4070 Ti</h1>
+      <div class="w-full flex gap-x-10 justify-between mb-20">
+        <button id="high" class="bg-gray-200 p-4 rounded-xl w-full" onclick="updateChart('high')">High</button>
+        <button id="medium" class="bg-gray-200 p-4 rounded-xl w-full" onclick="updateChart('medium')">Medium</button>
+        <button id="low" class="bg-gray-200 p-4 rounded-xl w-full" onclick="updateChart('low')">Low</button>
+      </div>
+      <canvas id="mychart" width="400" height="300"></canvas>
+    </section>
+
   </main>
 
 
   <!-- footer -->
-  <footer class="container mx-auto grid gap-16 mt-20">
-    <section>
+  <footer class="container mx-auto grid gap-16">
+    <section class="my-14">
 
       <div class="sign-up md:text-xl text-center mb-5 ">
-        <p class=" font-semibold hover:scale-105 transition ease-in-out delay-50  ">عضویت در خبرنامه</p>
+        <p class=" font-semibold hover:scale-105 transition ease-in-out delay-30  ">عضویت در خبرنامه</p>
       </div>
 
       <!-- footer-sign-up -->
