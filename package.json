@@ -1,6 +1,8 @@
 {
   "devDependencies": {
     "tailwindcss": "^3.4.7"
+  },
+  "dependencies": {
+    "boxicons": "^2.1.4"
   }
-
 }
