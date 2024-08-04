@@ -7,6 +7,7 @@
   <title>Pcfaster</title>
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./output.css" />
+  <link rel="stylesheet" href="./@fortawesome/fontawesome-free/css/all.min.css">
   <script src="./js/script.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -28,11 +29,11 @@
           placeholder="دنبال چه چیزی هستید؟">
       </div>
       <div class="icons-box flex">
-        <div class="bg-blue-100 rounded-full w-8 text-center ">
-          <box-icon name='cart' color='#4c5e60' class="w-4 mt-1 cursor-pointer"></box-icon>
+        <div class="bg-blue-100 rounded-full w-12 px-3 py-3 cursor-pointer text-center ">
+          <img src="images/cart-regular-24.png" class="" alt="">
         </div>
-        <div class="bg-blue-100 rounded-full w-8 text-center  mr-2">
-          <box-icon name='user' color='#4c5e60' class="w-4 mt-1 cursor-pointer"></box-icon>
+        <div class="bg-blue-100 rounded-full w-12 px-3 py-3 cursor-pointer text-center  mr-2">
+          <img src="images/user-regular-24.png" class="" alt="">
         </div>
       </div>
     </nav>
@@ -54,11 +55,16 @@
       <div class="content grid lg:grid-cols-2 mt-10 shadow-xl border rounded-md px-6 py-8 my-6">
         <div class="w-full lg:w-9/12 graphic-img slider flex justify-center lg:justify-center">
           <div class="slides lg:mt-16">
-            <img src="images/graphic-imge/graphic-card.png" class="first-image w-40 sm:w-52 sm:h-52 md:h-64 md:w-64 lg:h-72 lg:w-72 xl:w-96 xl:h-96 " alt="Image 1" />
-            <img src="images/graphic-imge/graphic-back.png" class="first-image w-40 sm:w-52 sm:h-52 md:h-64 md:w-64 lg:h-72 lg:w-72 xl:w-96 xl:h-96 " alt="Image 2" />
-            <img src="images/graphic-imge/graphic-fans.png" class="first-image w-40 sm:w-52 sm:h-52 md:h-64 md:w-64 lg:h-72 lg:w-72 xl:w-96 xl:h-96 " alt="Image 3" />
-            <img src="images/graphic-imge/graphic-port.png" class="first-image w-40 sm:w-52 sm:h-52 md:h-64 md:w-64 lg:h-72 lg:w-72 xl:w-96 xl:h-96 " alt="Image 3" />
-            <img src="images/graphic-imge/graphic-view.png" class="first-image w-40 sm:w-52 sm:h-52 md:h-64 md:w-64 lg:h-72 lg:w-72 xl:w-96 xl:h-96 " alt="Image 3" />
+            <img src="images/graphic-imge/graphic-card.png"
+              class="first-image w-40 sm:w-52 sm:h-52 md:h-64 md:w-64 lg:h-72 lg:w-72 xl:w-96 xl:h-96 " alt="Image 1" />
+            <img src="images/graphic-imge/graphic-back.png"
+              class="first-image w-40 sm:w-52 sm:h-52 md:h-64 md:w-64 lg:h-72 lg:w-72 xl:w-96 xl:h-96 " alt="Image 2" />
+            <img src="images/graphic-imge/graphic-fans.png"
+              class="first-image w-40 sm:w-52 sm:h-52 md:h-64 md:w-64 lg:h-72 lg:w-72 xl:w-96 xl:h-96 " alt="Image 3" />
+            <img src="images/graphic-imge/graphic-port.png"
+              class="first-image w-40 sm:w-52 sm:h-52 md:h-64 md:w-64 lg:h-72 lg:w-72 xl:w-96 xl:h-96 " alt="Image 3" />
+            <img src="images/graphic-imge/graphic-view.png"
+              class="first-image w-40 sm:w-52 sm:h-52 md:h-64 md:w-64 lg:h-72 lg:w-72 xl:w-96 xl:h-96 " alt="Image 3" />
             <!-- سایر تصاویر -->
           </div>
           <div class="zoom-image"></div>
@@ -120,17 +126,19 @@
       </div>
     </section>
 
-   
+
     <!-- Graphic-title -->
     <section class=" bg-white py-10 px-2 shadow-md rounded-md mt-14 ">
       <ul class="flex text-sm sm:gap-x-16 ">
         <li class="tab cursor-pointer sm:text-base " data-tab-target="#info" onclick="showTab('info')">مشخصات فنی</li>
-        <li class="tab cursor-pointer sm:text-base " data-tab-target="#comments" onclick="showTab('question')" >نظرات کاربران</li>
-        <li class="tab cursor-pointer sm:text-base " data-tab-target="#question" onclick="showTab('comments')" >پرسش و پاسخ</li>
+        <li class="tab cursor-pointer sm:text-base " data-tab-target="#comments" onclick="showTab('question')">نظرات
+          کاربران</li>
+        <li class="tab cursor-pointer sm:text-base " data-tab-target="#question" onclick="showTab('comments')">پرسش و
+          پاسخ</li>
       </ul>
     </section>
 
-    
+
 
     <!-- Graphic-description -->
     <section id="info" data-tab-content class="tab-content mt-20 grid gap-14 rounded-xl shadow-md border-t-2 active">
@@ -227,7 +235,7 @@
 
 
     <!-- Graphic-question -->
-    <section id="question" class="tab-content p-10 text-sm" data-tab-content >
+    <section id="question" class="tab-content p-10 text-sm" data-tab-content>
       <div class="w-full lg:flex lg:flex-row lg:gap-x-8 flex flex-col gap-y-10 ">
         <div class="w-full flex flex-col bg-white p-5 shadow-md rounded-md">
           <div class="border border-gray-300 py-5 rounded-lg">
@@ -281,7 +289,7 @@
 
 
     <!-- Graphic-overview -->
-    <section id="comments" class="tab-content p-10 " data-tab-content >
+    <section id="comments" class="tab-content p-10 " data-tab-content>
       <div class="lg:flex grid gap-x-10 justify-between gap-5">
         <div class="w-full bg-white p-5 shadow-md rounded-md">
           <div class="flex justify-between items-center">
@@ -340,15 +348,20 @@
     <hr class="mt-36">
 
     <!-- Graphic-benchmark -->
-    <section class="w-10/12 mx-auto my-32 ">
-      
+    <section class="w-full h-full lg:w-10/12 mx-auto my-32">
+
       <h1 class="text-3xl my-20 text-center">نمودار کارت گرافیک RTX 4070 Ti</h1>
-      <div class="w-full flex gap-x-10 justify-between mb-20">
+      <div class="w-full flex gap-x-2 sm:gap-x-10 justify-between mb-20">
         <button id="high" class="bg-gray-200 p-4 rounded-xl w-full" onclick="updateChart('high')">High</button>
         <button id="medium" class="bg-gray-200 p-4 rounded-xl w-full" onclick="updateChart('medium')">Medium</button>
         <button id="low" class="bg-gray-200 p-4 rounded-xl w-full" onclick="updateChart('low')">Low</button>
       </div>
-      <canvas id="mychart" width="400" height="300"></canvas>
+      <div id="chart-container">
+        <canvas id="mychart"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
     </section>
 
   </main>
@@ -382,17 +395,17 @@
       <section class="social-links flex justify-center py-3 gap-20 my-10 mt-20">
         <div
           class="hover:bg-sky-100 hover:border hover:border-sky-800 hover:scale-110 transition ease-in-out delay-30  icon-bg bg-sky-200 p-2 md:p-6 rounded-md flex justify-center items-center">
-          <box-icon name="telegram" type="logo" color="#5292c7"></box-icon>
+          <img src="images/social-icon/instagram-logo-36.png" alt="">
         </div>
 
         <div
           class="hover:bg-sky-100 hover:border hover:border-sky-800 hover:scale-110 transition ease-in-out delay-30  icon-bg bg-sky-200 p-2 md:p-6 rounded-md flex justify-center items-center">
-          <box-icon type="logo" name="twitter" color="#5292c7"></box-icon>
+          <img src="images/social-icon/telegram-logo-36.png" alt="">
         </div>
 
         <div
           class="hover:bg-sky-100 hover:border hover:border-sky-800 hover:scale-110 transition ease-in-out delay-30  icon-bg bg-sky-200 p-2 md:p-6 rounded-md flex justify-center items-center">
-          <box-icon name="youtube" type="logo" color="#5292c7"></box-icon>
+          <img src="images/social-icon/youtube-logo-36.png" alt="">
         </div>
       </section>
       </div>
@@ -427,28 +440,28 @@
     <!-- footer-mobile-menu -->
     <section class="flex justify-between shadow-2xl text-xs bg-white w-full px-10 py-4 bottom-0 fixed lg:hidden">
       <div class="text-center cursor-pointer">
-        <a href="#"><box-icon name='home-smile' color='#4c5e60'></box-icon></a>
-        <p class="text-xs ">خانه</p>
+        <a href=""><img src="images/home-smile-regular-24.png" alt=""></i></a>
+        <p class="text-xs mt-3">خانه</p>
       </div>
 
       <div class="text-center cursor-pointer">
-        <a href=""><box-icon name='menu' color='#4c5e60'></box-icon></a>
-        <p class="text-xs ">دسته بندی</p>
+        <a href=""><img src="images/menu-regular-24.png" class="mr-2" alt=""></i></a>
+        <p class="text-xs mt-3 ">دسته بندی</p>
       </div>
 
       <div class="text-center cursor-pointer">
-        <a href=""><box-icon name='cart-alt' color='#4c5e60'></box-icon></a>
-        <p class="text-xs ">سبد خرید</p>
+        <a href=""><img src="images/footer--cart-regular-24.png" class="mr-2" alt=""></i></a>
+        <p class="text-xs mt-3 ">سبد خرید</p>
       </div>
 
       <div class="text-center cursor-pointer">
-        <a href=""><box-icon name='search' color='#4c5e60'></box-icon></a>
-        <div class="text-xs ">جستجو</div>
+        <a href=""><img src="images/search-regular-24.png" alt=""></i></a>
+        <p class="text-xs mt-3 ">جستجو</p>
       </div>
 
       <div class="text-center cursor-pointer">
-        <a href=""><box-icon name='user' color='#4c5e60'></box-icon></a>
-        <p class="text-xs ">ورود</p>
+        <a href=""><img src="images/footer-user-regular-24.png" alt=""></i></a>
+        <p class="text-xs mt-3 ">ورود</p>
       </div>
 
     </section>

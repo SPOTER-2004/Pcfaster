@@ -116,3 +116,29 @@ canvas {
   color: white;
   box-shadow: 0 0 6px 6px #b3ffca;
 }
+
+#chart-container {
+  position: relative;
+  width: 100%;
+}
+
+#mychart {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  #mychart {
+      height: 300px; /* Smaller height for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  #mychart {
+      height: 200px; /* Even smaller height for very small screens */
+  }
+}
+
+.active-tab {
+  background-color: #0d6efd; /* Change active button color */
+  color: white;
+}
